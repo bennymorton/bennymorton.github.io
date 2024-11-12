@@ -1,7 +1,11 @@
-<nav>
+<nav class="navbar">
+    <div class="navbar-brand">Ben Morton</div>
+    <ul class="navbar-links">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}">
+    <li>
+        <a href="{{ item.link }}">
         {{ item.name }}
-      </a>
+        </a>
+    </li>
     {% endfor %}
 </nav>
