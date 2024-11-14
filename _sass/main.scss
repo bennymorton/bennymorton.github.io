@@ -48,6 +48,7 @@ body {
 /* Main Content Section */
 .main-content {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   align-items: flex-start;
   padding: 2em;
   margin: 1em;
@@ -56,8 +57,8 @@ body {
 
 /* Profile Image Section */
 .profile-image {
-  flex: 1 1 150px;
   max-width: 150px;
+  margin-bottom: 1em;
 }
 
 .profile-image img {
@@ -69,13 +70,13 @@ body {
 
 /* About Section */
 .about-section {
-  flex: 3;
+  width: 100%; /* Take full width */
   padding: 1em;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2em; /* Spacing below the About section */
+  margin-bottom: 2em; /* Space below the About section */
 }
 
 .about-section h2 {
@@ -89,6 +90,7 @@ body {
 
 /* Projects Section */
 .projects {
+  width: 100%; /* Take full width */
   padding: 2em;
   background-color: #fff;
   border: 1px solid #ddd;
