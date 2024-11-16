@@ -7,7 +7,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  // color: #333;
 }
 
 /* Navbar Styles */
@@ -65,9 +64,7 @@ body {
   flex: 1;
   padding: 1em;
   background-color: #fff;
-  // border: 1px solid #ddd;
   border-radius: 8px;
-  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .about-section p {
@@ -85,10 +82,8 @@ body {
 .projects {
   flex: 5;
   background-color: #fff;
-  // border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1em;
-  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .projects h2 {
@@ -167,7 +162,6 @@ body {
 .skills h3 {
   text-align: left;
   margin-top: 1em;
-  // font-size: smaller;
 }
 
 .skills ul {
@@ -181,6 +175,7 @@ body {
   padding: 0.5em 0;
   color: #000000;
 }
+
 .skills li img {
   width: 24px; /* Set icon size */
   height: 24px;
@@ -188,8 +183,6 @@ body {
   border-radius: 4px; /* Optional: round edges for icons */
   object-fit: cover; /* Ensures images fit nicely */
 }
-
-// PROJECT PAGES
 
 header {
   text-align: center;
@@ -247,3 +240,5 @@ a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*# sourceMappingURL=styles.css.map */
