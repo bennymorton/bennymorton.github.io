@@ -20,77 +20,79 @@ title: Ben Morton
   </div>
 </section>
 
+<!-- Main Content Area -->
 <div class="content-wrapper">
+  <!-- Projects and Skills Container -->
+  <div class="main-content">
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <!-- Project Card 1 -->
+        <a href="https://github.com/bennymorton/auto-job-applicator/tree/main" class="project-card">
+          <img src="assets/images/stock1.jpg" alt="Project 1 Image">
+          <h3>Auto Job Applicator</h3>
+          <p>This is the problem: the job hunting process in tech today is extremely tedious and convoluted. It involves scrolling through multiple different job boards, repeatedly searching for your specific needs and sifting through piles of rubbish. Some of the job descriptions are literally thousands of lines long, others are total vapour; as in the company isnt even hiring at all.</p>
+          <br>
+          <p><strong><em>It's about time someone automated this process.</em></strong></p>
+          <br>
+          <p>This project is designed to scrape jobs from LinkedIn of a pre-defined title and filter selection, then load that data into an AWS RDS database. Separately, a script then feeds that data from the database through the OpenAI API to gather deeper insights and summarise the hefty job descriptions. This data is then sent via the Notion API to a Notion database, to utilise Notion's customisability.</p>
+          <br>
+          <p>NOTE: Although I did genuinely use this pipeline to help me streamline my job hunting process for a while, I've put further development of it on hold while I pursue more pressing projects. It still stands as an excellent example of my Python programming ability however: click to check out the codebase.</p>
+        </a>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-cards">
-      <!-- Project Card 1 -->
-      <a href="https://github.com/bennymorton/auto-job-applicator/tree/main" class="project-card">
-        <img src="assets/images/stock1.jpg" alt="Project 1 Image">
-        <h3>Auto Job Applicator</h3>
-        <p>This is the problem: the job hunting process in tech today is extremely tedious and convoluted. It involves scrolling through multiple different job boards, repeatedly searching for your specific needs and sifting through piles of rubbish. Some of the job descriptions are literally thousands of lines long, others are total vapour; as in the company isnt even hiring at all.</p>
-        <br>
-        <p><strong><em>It's about time someone automated this process.</em></strong></p>
-        <br>
-        <p>This project is designed to scrape jobs from LinkedIn of a pre-defined title and filter selection, then load that data into an AWS RDS database. Separately, a script then feeds that data from the database through the OpenAI API to gather deeper insights and summarise the hefty job descriptions. This data is then sent via the Notion API to a Notion database, to utilise Notion's customisability.</p>
-        <br>
-        <p>NOTE: Although I did genuinely use this pipeline to help me streamline my job hunting process for a while, I've put further development of it on hold while I pursue more pressing projects. It still stands as an excellent example of my Python programming ability however: click to check out the codebase.</p>
-      </a>
+        <!-- Project Card 2 -->
+        <a href="https://github.com/bennymorton/Web-App-DevOps-Project" class="project-card">
+          <img src="assets/images/azure-devops.png" alt="Project 2 Image">
+          <h3>End-to-end DevOps Pipeline</h3>
+          <p>This is the final project completed by students of AiCore specialising in cloud & DevOps, I helped design and develop it in my role as Content Engineer.</p>
+          <p>The project is a Flask web app that allows you to efficiently manage and track orders for a potential business. The aim of this project was to give students as much exposure as possible to the most in-demand DevOps tools and technologies, listed below.</p>
+          <h4>Tools and Technologies Used</h4>
+          <ul>
+            <li><strong>Python</strong> for scripting the Flask app</li>
+            <li><strong>Advanced git & github</strong> for version control</li>
+            <li><strong>Docker</strong> for containerisation</li>
+            <li><strong>Kubernetes</strong> for container orchestration</li>
+            <li><strong>Terraform</strong> for IaC, including multiple modules and remote backend storage</li>
+            <li><strong>AKS (Azure Kubernetes Service)</strong> for container orchestration in the cloud</li>
+            <li><strong>Azure DevOps</strong> to create a CI/CD pipeline for the whole process</li>
+          </ul>
+        </a>
 
-      <!-- Project Card 2 -->
-      <a href="https://github.com/bennymorton/Web-App-DevOps-Project" class="project-card">
-        <img src="assets/images/azure-devops.png" alt="Project 2 Image">
-        <h3>End-to-end DevOps Pipeline</h3>
-        <p>This is the final project completed by students of AiCore specialising in cloud & DevOps, I helped design and develop it in my role as Content Engineer.</p>
-        <p>The project is a Flask web app that allows you to efficiently manage and track orders for a potential business. The aim of this project was to give students as much exposure as possible to the most in-demand DevOps tools and technologies, listed below.</p>
-        <h4>Tools and Technologies Used</h4>
-        <ul>
-          <li><strong>Python</strong> for scripting the Flask app</li>
-          <li><strong>Advanced git & github</strong> for version control</li>
-          <li><strong>Docker</strong> for containerisation</li>
-          <li><strong>Kubernetes</strong> for container orchestration</li>
-          <li><strong>Terraform</strong> for IaC, including multiple modules and remote backend storage</li>
-          <li><strong>AKS (Azure Kubernetes Service)</strong> for container orchestration in the cloud</li>
-          <li><strong>Azure DevOps</strong> to create a CI/CD pipeline for the whole process</li>
-        </ul>
-      </a>
+        <!-- Project Card 3 -->
+        <a href="https://github.com/bennymorton/pinterest-cloud-data-pipeline/tree/dev" class="project-card">
+          <img src="assets/images/pint-arch.png" alt="Project 3 Image">
+          <h3>ETL Data Pipeline</h3>
+          <p>This project is an end-to-end cloud-based data engineering project that I helped design and review the architecture for.</p>
+          <p>It simulates real user activity on Pinterest, by leveraging AWS and Databricks to handle both batch and streaming data processing. The pipeline processes user-generated posts, geolocation data, and user metadata through a scalable architecture that integrates various cloud services for data ingestion, transformation, and querying.</p>
+          <h4>Tools and Technologies Used</h4>
+          <ul>
+            <li><strong>AWS MSK</strong> (Managed Streaming for Apache Kafka) for managing Kafka clusters.</li>
+            <li><strong>S3</strong> for data storage.</li>
+            <li><strong>AWS Kinesis</strong> for real-time data streaming.</li>
+            <li><strong>Databricks</strong> for data cleaning, transformation, and querying.</li>
+            <li><strong>Apache Airflow (AWS MWAA)</strong> for orchestration and automation via Directed Acyclic Graphs (DAGs).</li>
+            <li><strong>Confluent Kafka REST Proxy</strong> for API integrations.</li>
+            <li><strong>Apache Spark</strong> for streaming and batch data processing.</li>
+            <li><strong>Python</strong> for scripting</li>
+          </ul>
+        </a>
+      </div>
+    </section>
 
-      <!-- Project Card 3 -->
-      <a href="https://github.com/bennymorton/pinterest-cloud-data-pipeline/tree/dev" class="project-card">
-        <img src="assets/images/pint-arch.png" alt="Project 3 Image">
-        <h3>ETL Data Pipeline</h3>
-        <p>This project is an end-to-end cloud-based data engineering project that I helped design and review the architecture for.</p>
-        <p>It simulates real user activity on Pinterest, by leveraging AWS and Databricks to handle both batch and streaming data processing. The pipeline processes user-generated posts, geolocation data, and user metadata through a scalable architecture that integrates various cloud services for data ingestion, transformation, and querying.</p>
-        <h4>Tools and Technologies Used</h4>
-        <ul>
-          <li><strong>AWS MSK</strong> (Managed Streaming for Apache Kafka) for managing Kafka clusters.</li>
-          <li><strong>S3</strong> for data storage.</li>
-          <li><strong>AWS Kinesis</strong> for real-time data streaming.</li>
-          <li><strong>Databricks</strong> for data cleaning, transformation, and querying.</li>
-          <li><strong>Apache Airflow (AWS MWAA)</strong> for orchestration and automation via Directed Acyclic Graphs (DAGs).</li>
-          <li><strong>Confluent Kafka REST Proxy</strong> for API integrations.</li>
-          <li><strong>Apache Spark</strong> for streaming and batch data processing.</li>
-          <li><strong>Python</strong> for scripting</li>
-        </ul>
-      </a>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <div style="clear: both;"></div>  <!-- This ensures the blog section starts on a new line -->
-  <section class="blog-section">
-    <h2>Blog</h2>
-    <div class="blog-cards">
-      <!-- Blog Card 1 -->
-      <a href="#" class="blog-card">
-        <img src="assets/images/placeholder.jpg" alt="Blog Post 1 Image">
-        <h3>Blog Post Title</h3>
-        <p>Blog post description will go here.</p>
-      </a>
-    </div>
-  </section>
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h2>Blog</h2>
+      <div class="blog-cards">
+        <!-- Blog Card 1 -->
+        <a href="#" class="blog-card">
+          <img src="assets/images/placeholder.jpg" alt="Blog Post 1 Image">
+          <h3>Blog Post Title</h3>
+          <p>Blog post description will go here.</p>
+        </a>
+      </div>
+    </section>
+  </div>
 
   <!-- Skills Section -->
   <section class="skills">
