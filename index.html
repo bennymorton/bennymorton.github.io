@@ -13,7 +13,7 @@ title: Ben Morton
   <div class="about-section">
     <h2>Hello!</h2>
     <br>
-    <p>Welcome to my portfolio site. I'm a DevOps/Platform Engineer currently working at the career accelerator AiCore.</p><br>
+    <p>Welcome to my portfolio site. I'm a Data/DevOps Engineer currently working at the career accelerator AiCore.</p><br>
     <p>The bulk of my work entails building Data and DevOps pipelines, including corresponding educational content on all the tools and processes used. In addition to researching and digesting new technologies lightning fast.</p><br>
     <p>I have a knack for programming, infrastructure, and automating things. Click on any of the projects below to check out the GitHub repos, or any of the links above to see my CV/get in touch.</p><br>
     <p></p>
@@ -30,14 +30,17 @@ title: Ben Morton
       <a href="https://github.com/bennymorton/auto-job-applicator/tree/main" class="project-card">
         <img src="assets/images/stock1.jpg" alt="Project 1 Image">
         <h3>Auto Job Applicator</h3>
-        <p>Still in development. Click to see the codebase anyway.</p>
+        <p>This is the problem: the job hunting process in tech today is extremely tedious and convoluted. It involves scrolling through multiple different job boards, repeatedly searching for your specific needs and sifting through piles of rubbish. Some of the job descriptions are literally thousands of lines long, others are total vapour; as in the company isnt even hiring at all.</p>
+        <p><strong>It's about time someone automated this process.</strong></p>
+        <p>This project is designed to scrape jobs from LinkedIn of a pre-defined title and filter selection, then load that data into an AWS RDS database. Separately, a script then feeds that data from the database through the OpenAI API to gather deeper insights and summarise the hefty job descriptions. This data is then sent via the Notion API to a Notion database, to utilise Notion's customisability.</p>
+        <p>NOTE: Although I did genuinely use this pipeline to help me streamline my job hunting process for a while, I've put further development of it on hold while I pursue more pressing projects. It still stands as an excellent example of my Python programming ability however: click to check out the codebase.</p>
       </a>
 
       <!-- Project Card 2 -->
       <a href="https://github.com/bennymorton/Web-App-DevOps-Project" class="project-card">
         <img src="assets/images/azure-devops.png" alt="Project 2 Image">
         <h3>End-to-end DevOps Pipeline</h3>
-        <p>This is the final project completed by students of AiCore specialising in cloud & DevOps, I helped design and review it in my role as Content Engineer.</p>
+        <p>This is the final project completed by students of AiCore specialising in cloud & DevOps, I helped design and develop it in my role as Content Engineer.</p>
         <p>The project is a Flask web app that allows you to efficiently manage and track orders for a potential business. The aim of this project was to give students as much exposure as possible to the most in-demand DevOps tools and technologies, listed below.</p>
         <h4>Tools and Technologies Used</h4>
         <ul>
@@ -55,7 +58,7 @@ title: Ben Morton
       <a href="https://github.com/bennymorton/pinterest-cloud-data-pipeline/tree/dev" class="project-card">
         <img src="assets/images/pint-arch.png" alt="Project 3 Image">
         <h3>ETL Data Pipeline</h3>
-        <p>This project is an end-to-end cloud-based data engineering project that I built as a student at AiCore, in 2022.</p>
+        <p>This project is an end-to-end cloud-based data engineering project that I helped design and review the architecture for.</p>
         <p>It simulates real user activity on Pinterest, by leveraging AWS and Databricks to handle both batch and streaming data processing. The pipeline processes user-generated posts, geolocation data, and user metadata through a scalable architecture that integrates various cloud services for data ingestion, transformation, and querying.</p>
         <h4>Tools and Technologies Used</h4>
         <ul>
