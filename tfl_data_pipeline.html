@@ -1,0 +1,77 @@
+---
+layout: default
+title: Ben Morton | TfL Data Pipeline
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Morton | TfL Data Pipeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>TfL Data Pipeline</h1>
+    <p>A modern data stack pipeline processing Transport for London data</p>
+  </header>
+
+  <div class="project-page-wrapper">
+    <!-- Project Overview -->
+    <div class="description-box">
+      <h2>Project Overview</h2>
+      <p>This project implements a modern data stack pipeline that processes real-time Transport for London (TfL) API data. The pipeline extracts data about tube lines, bus routes, and service disruptions, transforms it using dbt, and loads it into BigQuery for analysis and visualization.</p>
+    </div>
+
+    <!-- Architecture Section -->
+    <div class="text-box">
+      <h2>Architecture</h2>
+      <p>The pipeline follows a modern ELT (Extract, Load, Transform) architecture:</p>
+      <ul>
+        <li><strong>Extract:</strong> Python scripts fetch data from TfL's API endpoints</li>
+        <li><strong>Load:</strong> Raw data is loaded directly into BigQuery staging tables</li>
+        <li><strong>Transform:</strong> dbt models clean, transform, and model the data for analysis</li>
+      </ul>
+    </div>
+
+    <!-- Technical Details -->
+    <div class="text-box">
+      <h2>Technical Implementation</h2>
+      <h3>Key Components:</h3>
+      <ul>
+        <li><strong>Data Source:</strong> TfL's Open Data API providing real-time transport information</li>
+        <li><strong>Data Warehouse:</strong> Google BigQuery for scalable data storage and analytics</li>
+        <li><strong>Transformation:</strong> dbt for data modeling, testing, and documentation</li>
+        <li><strong>Orchestration:</strong> Python scripts for API interaction and data ingestion</li>
+      </ul>
+    </div>
+
+    <!-- Data Models -->
+    <div class="text-box">
+      <h2>Data Models</h2>
+      <p>The dbt transformation layer includes several key models:</p>
+      <ul>
+        <li><strong>Staging Models:</strong> Raw data from TfL API</li>
+        <li><strong>Intermediate Models:</strong> Cleaned and standardized data</li>
+        <li><strong>Mart Models:</strong> Business-ready datasets for analysis</li>
+      </ul>
+    </div>
+
+    <!-- Future Enhancements -->
+    <div class="text-box">
+      <h2>Future Enhancements</h2>
+      <ul>
+        <li>Integration with real-time visualization tools</li>
+        <li>Extension to additional TfL services and API endpoints</li>
+        <li>Addition of Apache Airflow for orchestration and automation.</li>
+      </ul>
+    </div>
+
+    <!-- GitHub Link -->
+    <div class="text-box">
+      <h2>Source Code</h2>
+      <p>The complete source code for this project is available on <a href="https://github.com/bennymorton/tfl_data_pipeline">GitHub</a>.</p>
+    </div>
+  </div>
+</body>
+  
